@@ -9,18 +9,13 @@
     <link rel="icon" href="Assets/logo.png" type="image/png">
 </head>
 <body>
-    <script>
-        window.onload=function(){
-            calculator();
-        }
-    </script>
     <div class="mainLayout">
         <div class="displayArea">
             <div class="rightArea">
-                <img class="button1" src="Assets/button3.png" onclick="button3()">
-                <div class="circleFinal">
-                    <div class="circleText1">YOUR GPA IS</div>
-                    <div id="gpa">0.000</div>
+                <img class="button1" src="Assets/button.png"onclick="button1()">
+                <div class="circle">
+                    <div class="circleText1">ENTER HERE</div>
+                    <input type="text" id="userInput1" placeholder="00" onfocus="clearPlaceholder(this)" >
                 </div>
             </div>
             <div class="leftArea">
@@ -28,12 +23,13 @@
                     <img src="Assets/logo.png" class="logo">
                     <p class="logoText">CAL</p>
                 </div>
-                    <p class="introText">Your calculated GPA is a reflection of your hard work and dedication <br> throughout your academic term.</p>
-                    <p class="introText2">Your achieved GPA!</p>
+                    <p class="introText">Want to calculate your college grades? <br>This GCAL calculator will help you<br> Calculate your GPA and stay on top of your study grades in just minutes! </p>
+                    <p class="introText2">How Many Courses...</p>
+                
             </div>
         </div>
          <div class="footer">
-            <p class="footerText">© [2023] GPACalculator. All Rights Reserved. Created by Oshith Roshantha &#x1F607;</p>
+            <p class="footerText">© [2023] GPACalculator. All Rights Reserved. Created by Oshith Roshantha 	&#x1F607;</p>
          </div>   
     </div>
 </body>

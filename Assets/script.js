@@ -1,15 +1,12 @@
 function button1(){
     let noCourses=document.getElementById('userInput1').value;
     localStorage.setItem('userInput1', noCourses);
-    if(noCourses<1||noCourses>16)
-        alert("When entering the Course count, the accepted range is between 1 and 16, inclusive!");
+    if(noCourses<1||noCourses>15)
+        alert("When entering the Course count, the accepted range is between 1 and 15, inclusive!");
     else{
         window.location.href = 'results.html';
         
     }
-}
-function button5(){
-    window.location.href = 'gpaIndex.html';
 }
 function generateForm(x) {
     var formContainer = document.getElementById('formContainer');
@@ -47,7 +44,7 @@ function generateForm(x) {
     
 }
 function button3(){
-    window.location.href='main.html';
+    window.location.href='index.html';
 }
 function button2() {
     var courseData = [];
