@@ -20,7 +20,7 @@ This GPA Calculator is a web application developed using HTML, CSS, and JavaScri
 
 ## How to Run
 
-Simply open `index.html` in any modern web browser to access the GPA calculator.
+Simply open `main.html` in any modern web browser to access the GPA calculator.
 
 ## Future Improvements
 
