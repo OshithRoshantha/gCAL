@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainLayout{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto; 
+    background: linear-gradient(70deg, black, darkblue);
+    justify-content: flex-end;
+    gap: 0%;
+    flex-shrink: 0;
+}
+.mainLayout2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto; 
+    background: linear-gradient(70deg, darkblue, black);
+    justify-content: flex-end;
+    gap: 0%;
+    flex-shrink: 0;
+}
+.footer{
+    width: 100%;
+    height: 5%;
+    background: #5389e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerText{
+    color: white;
+    font-family: Calibri, sans-serif;
+    text-align: center;
+}
+.fixed{
+    position: fixed;
+    width: auto;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.displayArea{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+#displayArea2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap
+}
+.leftArea{
+    max-width: 55%;
+    flex: 0 0 55%;
+    display: flex;
+    flex-direction: column;
+    height: 97vh;
+    justify-content: center;
+    gap: 50px;
+}
+.leftArea2{
+    max-width: 50%;
+    flex: 0 0 50%;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.blackFormContainer{
+    width: 450px;
+    height: auto;
+    border-radius: 40px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    animation: expandShadow 1s ease-in-out infinite alternate; 
+    box-shadow: 0 0 10px #5389e0;
+}
+.logoArea{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoArea2{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.textArea1{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+.logo{
+    height: 65%;
+    
+}
+.logoText{
+    font-size: 130px;
+    font-weight: bolder;
+    color: white;
+    font-family: Calibri, sans-serif;
+    margin-bottom: -40px;
+    animation: changeColor 1s infinite alternate;
+} 
+@keyframes changeColor {
+    0% {
+      color: white; 
+    }
+    50% {
+      color: #5389e0;
+    }
+    100% {
+      color: #5389e0;
+    }
+  }
+.rightArea{
+    max-width: 45%;
+    flex: 0 0 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+.rightArea2{
+    max-width: 50%;
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    gap: 10px;
+
+}
+.circle{
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    background: black;
+    animation: expandShadow 1s ease-in-out infinite alternate; 
+    box-shadow: 0 0 10px #5389e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.circleFinal{
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    background: black;
+    animation: expandShadow 1s ease-in-out infinite alternate; 
+    box-shadow: 0 0 10px #5389e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes expandShadow {
+    0% {
+        box-shadow: 0 0 10px #5389e0;
+    }
+    100% {
+        box-shadow: 0 0 400px #5389e0; 
+    }
+}
+.introText{
+    font-size: 20px;
+    color: white;
+    font-family: Calibri, sans-serif;
+    text-align: center;
+}
+.introText2{
+    font-size: 70px;
+    color: white;
+    font-family: Calibri, sans-serif;
+    text-align: center;
+}
+#userInput1{
+    height: 30%;
+    width: 35%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    font-size: 150px;
+    text-align: center;
+}
+#gpa{
+    color: white;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    font-size: 150px;
+}
+.circleText1{
+    color: white;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    font-size: 4vw;
+}
+@media (max-width: 768px) {
+    .circle, .circleFinal {
+        height: 75vw;
+        width: 75vw;
+    }
+}
+@media (max-width: 768px) {
+    #userInput1, #gpa{
+        font-size: 22vw;
+    }
+}
+@media (max-width: 768px) {
+    .button1{
+        height: 15vw;
+    }
+}
+@media (max-width: 768px) {
+    .button2{
+        height: 10vw;
+    }
+}
+@media (max-width: 768px) {
+    .blackFormContainer {
+        width: 75vw;
+    }
+}
+@media (max-width: 768px) {
+    .logoText {
+       font-size: 27vw;
+    }
+}
+@media (max-width: 768px) {
+    .logo {
+       height: 28vw;
+    }
+}
+@media (max-width: 768px) {
+    .fixed {
+       position: relative;
+    }
+}
+@media (max-width: 1200px) {
+    .leftArea, .rightArea {
+      flex: 0 0 100%; 
+      max-width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    .leftArea2, .rightArea2 {
+      flex: 0 0 100%; 
+      max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .leftArea2{
+      margin-bottom: 17%;
+    }
+}
+
+
+
+@media (max-height: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .circle, .circleFinal {
+        height: 75vh;
+        width: 75vh;
+    }
+}
+@media (max-height: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #userInput1, #gpa{
+        font-size: 22vh;
+    }
+}
+@media (max-height: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .button1{
+        height: 15vh;
+    }
+}
+@media (max-height: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .button2{
+        height: 10vh;
+    }
+}
+@media (max-height: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .blackFormContainer {
+        width: 98vh;
+    }
+}
+@media (max-height: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .logoText {
+        font-size: 27vh;
+     }
+}
+@media (max-height: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .logo {
+        height: 28vh;
+     }
+}
+@media (max-height: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .fixed {
+        position: relative;
+     }
+}
+@media (max-height: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .leftArea2{
+        margin-bottom: 17%;
+      }
+}
+@media (max-height: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .introText, .introText2 {
+        font-size: 5vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button1{
+    height: 80px;
+    margin-right: -25px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+}
+.button1:hover {
+    transform: scale(1.2); 
+}
+.buttonContainer{
+    width: 80px;
+    height: auto;
+    margin-left: -25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.button2{
+    height: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+.button2:hover {
+    transform: scale(1.2); 
+}
