@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Assets/main.css">
+    <link rel="stylesheet" href="Assets/results.css">
+    <script src="Assets/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCAL</title>
+    <link rel="icon" href="Assets/logo.png" type="image/png">
+</head>
+<body>
+    <script>
+        window.onload=function(){
+            generateForm(localStorage.getItem('userInput1'));
+        }
+    </script>
+    <div class="mainLayout2">
+        <div id="displayArea2">
+            <div class="rightArea2">
+                <div class="fixed">
+                    <div class="logoArea2">
+                        <img src="Assets/logo.png" class="logo">
+                        <p class="logoText">CAL</p>
+                    </div>
+                    <div class="textArea1">
+                        <p class="introText">Please enter the credit hours, <br>Corresponding grades for each of your courses.<br> TO ACCURATELY COMPUTE YOUR GPA! </p>
+                        <p class="introText2">Credits & Grades...</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="leftArea2">
+                <div class="blackFormContainer">
+                    <div id="formContainer"></div>
+               </div>
+               <div class="buttonContainer">
+                    <img class="button2" src="Assets/button2.png" onclick="button2()">
+                    <img class="button2" src="Assets/button3.png" onclick="button3()">
+               </div>
+            </div>
+        </div>
+         <div class="footer">
+            <p class="footerText">© [2023] GPACalculator. All Rights Reserved. Created by Oshith Roshantha 	&#x1F607;</p>
+         </div>   
+    </div>
+</body>
+</html>
