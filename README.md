@@ -15,8 +15,8 @@ This GPA Calculator is a web application developed using HTML, CSS, and JavaScri
 
 ## Usage
 
-1. Input course details, including course name, credit hours, and grade received.
-2. Click the "Calculate GPA" button to generate the GPA based on the provided information.
+1. Input course details: credit hours and grade received.
+2. Click the button to generate the GPA based on the provided information.
 
 ## How to Run
 
