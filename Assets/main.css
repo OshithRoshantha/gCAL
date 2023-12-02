@@ -198,6 +198,9 @@
     font-family: Calibri, sans-serif;
     text-align: center;
 }
+input[type="text"]:focus::placeholder {
+    color: transparent;
+}
 #userInput1{
     height: 30%;
     width: 35%;
@@ -335,21 +338,6 @@
         font-size: 5vh;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .button1{
     height: 80px;
     margin-right: -25px;
