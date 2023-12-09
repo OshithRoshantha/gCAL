@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="Assets/main.css">
+    <link rel="font" href="Assets/switzer.css">
     <script src="Assets/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,13 @@
     </script>
     <div class="mainLayout">
         <div class="displayArea">
+            <div id="popupContainer">
+                <img src="Assets/popup.png" class="cup">
+                <img src="Assets/close.png" class="close" onclick="closePopUp()">
+                <p class="popupP2">You Achieved,</p>
+                <p id="gpaClass">--</p>
+                <p class="popupP2">Class... &#x2764</p>
+            </div>
             <div class="rightArea">
                 <img class="button1" src="Assets/button3.png" onclick="button3()">
                 <div class="circleFinal">

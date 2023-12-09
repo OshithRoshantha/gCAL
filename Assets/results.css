@@ -7,6 +7,9 @@ input[type="text"]::placeholder {
     text-align: center;
 
 }
+input[type="text"]:focus::placeholder {
+    color: transparent;
+}
 input[type="text"] {
     background: #5389e0;
     border: none;

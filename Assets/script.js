@@ -1,14 +1,22 @@
 function button1(){
     let noCourses=document.getElementById('userInput1').value;
     localStorage.setItem('userInput1', noCourses);
-    if(noCourses<1||noCourses>15)
-        alert("When entering the Course count, the accepted range is between 1 and 15, inclusive!");
-    else{
-        window.location.href = 'results.html';
-        
+    const integerPattern = /^\d+$/;
+    if(integerPattern.test(noCourses)){
+        if(noCourses<1||noCourses>60)
+            alert("When entering the Course count, the accepted range is between 1 and 60, inclusive!");
+        else{
+            window.location.href = 'results.html';
+         }
     }
+    else{
+        alert("Sorry, Can only contain numerical values!");
+    }   
 }
 function generateForm(x) {
+
+
+
     var formContainer = document.getElementById('formContainer');
     formContainer.innerHTML = '';
     for (var i = 1; i <= x; i++) {
@@ -51,7 +59,7 @@ function button2() {
     var inputFields = document.querySelectorAll('#formContainer input[type="text"]');
     var selectFields = document.querySelectorAll('#formContainer select');
 
-    var unchangedField = false;
+    var hasNonNumericalValue = false;
 
     inputFields.forEach(function(inputField, index) {
         var credits = inputField.value;
@@ -60,12 +68,16 @@ function button2() {
         courseData.push({ credits: credits, grade: grade });
 
         if (credits === '' || grade === '') {
-            unchangedField = true;
+            hasNonNumericalValue = true;
+        } else {
+            if (isNaN(credits)) {
+                hasNonNumericalValue = true;
+            }
         }
     });
 
-    if (unchangedField) {
-        alert("Please fill in all course details!");
+    if (hasNonNumericalValue) {
+        alert("Please fill in all course credits with numerical values!");
     } else {
         localStorage.setItem('courseData', JSON.stringify(courseData));
         window.location.href = 'summary.html';
@@ -90,6 +102,12 @@ function calculator() {
     var accurateGpa=gpa.toFixed(3);
 
     document.getElementById('gpa').innerHTML=accurateGpa;
+    popUpText(accurateGpa);
+    if(accurateGpa>=3){
+        var popUpWindow=document.getElementById('popupContainer');
+        popUpWindow.style.visibility='visible';
+    }
+    
 }
 
 function findGrade(grade) {
@@ -125,8 +143,20 @@ function findGrade(grade) {
     }
 }
 
+function popUpText(accurateGpa){
+    if(accurateGpa>=3.7){
+        document.getElementById('gpaClass').innerHTML="FIRST";
+    }
+    else if (accurateGpa>=3.3) {
+        document.getElementById('gpaClass').innerHTML="2ND UPPER";
+    } 
+    else if (accurateGpa>=3.0) {
+        document.getElementById('gpaClass').innerHTML="2ND LOWER";
+    }
+}
 
 
-
-
-
+function closePopUp(){
+    var popUpWindow=document.getElementById('popupContainer');
+    popUpWindow.style.visibility='hidden';
+}
