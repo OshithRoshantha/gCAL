@@ -46,7 +46,7 @@
 }
 #popupContainer{
     background: #120b5c;
-    height: 235px;
+    height: 240px;
     width: 25vw;
     position: fixed;
     z-index: 1000;
@@ -346,6 +346,41 @@ input[type="text"]:focus::placeholder {
        position: relative;
     }
 }
+@media (max-width: 768px){
+    #popupContainer{
+        background: #120b5c;
+        height: 160px;
+        width: 54vw;
+        position: fixed;
+        z-index: 1000;
+        margin-bottom: 90vh;
+        gap: 0.5px;
+    }
+    .popupP{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: gold;
+        font-size: 4vw;
+    }
+    .popupP2{
+        font-family: Calibri, sans-serif;
+        color: gold;
+        font-size: 4vw;
+        text-align: center;
+    }
+    #gpaClass{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 10vw;
+        background: linear-gradient(to right, gold, #e52e71); 
+        -webkit-background-clip: text; 
+        background-clip: text;
+        color: transparent;
+    
+    }
+    .cup{
+        width: 58%;
+        margin-top: -59%;
+    }
+}
 @media (max-width: 1200px) {
     .leftArea, .rightArea {
       flex: 0 0 100%; 
@@ -353,7 +388,7 @@ input[type="text"]:focus::placeholder {
     }
     #popupContainer{
         background: #120b5c;
-        height: 150px;
+        height: 160px;
         width: 54vw;
         position: fixed;
         z-index: 1000;
@@ -390,6 +425,7 @@ input[type="text"]:focus::placeholder {
       flex: 0 0 100%; 
       max-width: 100%;
     }
+    
 }
 
 @media (max-width: 768px) {
