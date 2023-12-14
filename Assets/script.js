@@ -109,7 +109,6 @@ function calculator() {
     }
     
 }
-
 function findGrade(grade) {
     switch (grade) {
         case 'A+':
@@ -142,7 +141,6 @@ function findGrade(grade) {
             return -1; 
     }
 }
-
 function popUpText(accurateGpa){
     if(accurateGpa>=3.7){
         document.getElementById('gpaClass').innerHTML="FIRST";
@@ -154,8 +152,6 @@ function popUpText(accurateGpa){
         document.getElementById('gpaClass').innerHTML="2ND LOWER";
     }
 }
-
-
 function closePopUp(){
     var popUpWindow=document.getElementById('popupContainer');
     popUpWindow.style.visibility='hidden';

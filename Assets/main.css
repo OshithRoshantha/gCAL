@@ -245,6 +245,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .circleFinal{
     height: 450px;
@@ -350,7 +351,7 @@ input[type="text"]:focus::placeholder {
     #popupContainer{
         background: #120b5c;
         height: 34vw;
-        width: 54vw;
+        width: 62vw;
         position: fixed;
         z-index: 1000;
         margin-bottom: 90vh;
@@ -442,7 +443,7 @@ input[type="text"]:focus::placeholder {
      #popupContainer{
         background: #120b5c;
         height: 30vh;
-        width: 55vh;
+        width: 62vh;
         position: fixed;
         z-index: 1000;
         margin-bottom: 90vh;
