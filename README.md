@@ -1,4 +1,5 @@
 # gCAL
+https://gcalore.netlify.app/
 This GPA Calculator is a web application developed using HTML, CSS, and JavaScript. It enables users to input their course details and computes their GPA based on the provided information.
 
 ## Features
